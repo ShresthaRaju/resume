@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+}
+
+.profile {
+    position: fixed;
+    padding: 0;
+    z-index: 1;
+}
+
+.intro {
+    background-image: url("../images/profile-photo.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+}
+
+.image-overlay {
+    background-image: linear-gradient(45deg, rgba(153, 50, 153, 0.8), rgba(0, 255, 255, 0.3));
+    height: 100%;
+}
+
+.profile-content {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10%;
+    z-index: 1;
+    right: 0;
+}
+
+.social-links .icon {
+    color: #fff;
+    padding: 12px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.social-links .icon:hover {
+    transform: scale(1.5);
+}
+
+section.my-skills{
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .profile {
+        position: relative;
+    }
+}
