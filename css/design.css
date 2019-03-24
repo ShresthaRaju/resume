@@ -42,11 +42,67 @@ body {
     transform: scale(1.5);
 }
 
-section.my-skills{
-    background-color: #f9f9f9;
-    padding: 10px;
+/*skills*/
+section {
+    padding: 16px;
 }
 
+section.my-skills {
+    background-color: #f9f9f9;
+}
+
+/*education*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+/*line*/
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    left: 20px;
+    height: 100%;
+}
+
+ul.timeline li {
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+/*circle*/
+ul.timeline li:before {
+    content: ' ';
+    background: #fff;
+    position: absolute;
+    left: 11px;
+    border-radius: 50%;
+    height: 20px;
+    margin: 8px 0;
+    width: 20px;
+    border: 3px solid green;
+}
+
+ul.timeline .card {
+    max-width: 20rem;
+}
+
+/*arrow*/
+ul.timeline .card:before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    left: -10px;
+    margin: 7px 0;
+    border: medium solid #343a40;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #343a40 transparent transparent;
+}
 
 @media screen and (max-width: 800px) {
     .profile {
