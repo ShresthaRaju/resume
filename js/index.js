@@ -1,9 +1,4 @@
 $(document).ready(function() {
-
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-
     // animate progress bar
     $('.progress-bar').each(function() {
         let valueNow = $(this).attr('aria-valuenow');
